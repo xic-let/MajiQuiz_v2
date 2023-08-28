@@ -1,0 +1,83 @@
+
+.selected-button {
+    background-color: green;
+    color: white;
+}
+
+.red-jumbotron {
+    background-color: red;
+    color: white; 
+}
+
+.red-jumbotron {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+.btn-rounded {
+    border-radius: 50px;
+}
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    /*Fix for safari gap*/
+    min-height: 100px;
+    max-height: 150px;
+}
+.waves .moving-waves {
+    animation: moveWaves 20s linear infinite;
+}
+@keyframes moveWaves {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+.page-header {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+.page-header .container .row {
+    justify-content: center;
+}
+.page-header .container .row .col-md-8 {
+    text-align: center;
+}
+.page-header .container .row .col-md-8 .display-1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+.page-header .container .row .col-md-8 .lead {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.page-header .container .row .col-md-8 .display-1,
+.page-header .container .row .col-md-8 .lead {
+    margin-bottom: 30px;
+}
+.page-header .container .row .col-md-8 .btn {
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.page-header .container .row .col-md-8 .btn-primary {
+    background-color: #fff;
+    color: #000;
+}
+.page-header .container .row .col-md-8 .btn-primary:hover {
+    background-color: #000;
+    color: #fff;
+}

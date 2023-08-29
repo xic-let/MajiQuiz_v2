@@ -1,8 +1,19 @@
 @extends('layouts.layout')
 
 @section('content')
+<div class="container">
+    <header>
+        <div class="page-header min-vh-1 pb-md-5 absolute">
+            <container class="container">
+                <div class="d-flex align-items-center justify-content-center min-vh-80 pb-md-1">
+                <img src="./img/happy.jpg" alt="inspiration" class="img-fluid" style="max-height: 500px;">
+                </div>
+            </container>
+        </div>
+    </header>
 
-<div class="container mt-5">
+
+<div class="container mt-1">
     <h2>My Top Scores</h2>
     
     {{-- dropdowns para filtrar tabela --}}
@@ -74,6 +85,14 @@
             @endforeach
         </tbody>
     </table>
+</div>
+
+<div class="container" class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="jumbotron text-center mx-auto ">
+  <h3 class="display-5">Success is not the destination, but a continuous journey fueled by determination, dedication, and the relentless pursuit of greatness.</h3>
+  <p class="lead">Keep on getting better!</p>
+    <hr class="my-2">
+
 </div>
 
 {{-- 

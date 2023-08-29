@@ -2,6 +2,7 @@
 
 @section('content')
 
+<div class="container mt-5">
     <h2>Leaderboard</h2>
     
     {{-- dropdowns para filtrar tabela --}}

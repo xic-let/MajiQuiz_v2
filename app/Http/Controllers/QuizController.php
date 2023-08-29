@@ -14,6 +14,7 @@ class QuizController extends Controller
         // aceder à categoria e dificuldade passadas pelos dropdowns contidos no form da view home
         $selectedCategory = $request->category;
         $selectedDifficulty = $request->difficulty;
+
         
         // aceder a questoes da BD que correspondem à categoria e dificuldade selecionada pelo utilizador.
         // cada quiz tem 15 questoes mas ha apenas 10 questoes para cada combinacao de categoria e dificuldade.

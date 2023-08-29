@@ -3,8 +3,6 @@
 @section('content')
 
 <div class="container">
-   
-    <header>
         <div class="page-header min-vh-50 pb-md-5 absolute">
             <container class="container">
                 <div class="d-flex align-items-center justify-content-center min-vh-80 pb-md-1">
@@ -12,16 +10,20 @@
                 </div>
             </container>
         </div>
-    </header>
+
     <div class="container" class="d-flex justify-content-center align-items-center min-vh-100 red-jumbotron">
     <div class="jumbotron text-center mx-auto">
-  <h1 class="display-1">Are you Ready?</h1>
-  <p class="lead">Choose a category, a level and hit the start button!</p>
-    <hr class="my-2">
-    <p>Grab your thinking cap and a side of laughter, because at MajiQuiz, learning is the name of the game, and giggles are the bonus points!</p>
+        <h1 class="display-1">Are you Ready?</h1>
+         <p class="lead">Choose a category, a level and hit the start button!</p>
+        <hr class="my-2">
+        <p>Grab your thinking cap and a side of laughter, because at MajiQuiz, learning is the name of the game, and giggles are the bonus points!</p>
 </div>
-    <form action="{{ route('start-quiz') }}" method="post">
-        @csrf
+
+
+<form id="quizForm" action="{{ route('start-quiz') }}" method="post">
+            @csrf
+
+
             {{-- Opções de categoria --}}
         <div class="card text-white bg-info mb-5">
         <div class="card-body">
@@ -155,15 +157,12 @@
     </div>
 </div>
 
-
             
-            {{-- Campos escondidos para enviar os dados --}}
-        <input type="hidden" name="category" id="selectedCategory">
-        <input type="hidden" name="difficulty" id="selectedDifficulty">
-
-        <a href="Hit That" class="btn-img-link d-flex justify-content-center align-items-center" onclick="document.getElementById('quiz-form').submit();">
-    <img src="./img/start.png" alt="Start Quiz">
-</a>
-    </form>
+<button type="submit" class="btn btn-lg btn-primary">Start Quiz</button>
+            <a href="{{ route('home') }}" class="btn btn-lg btn-secondary">Cancel</a>
+        </form>
+    </div>
 </div>
+
+
 @endsection
